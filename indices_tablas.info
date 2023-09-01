@@ -1,0 +1,30 @@
+Indices tabla customers: 
+customer_id
+------------
+Indices tabla orders: 
+order_id
+------------
+Indices tabla order_payments: 
+order_id, payment_sequential
+------------
+Indices tabla order_items: 
+order_id, order_item_id
+------------
+Indices tabla products: 
+product_id
+------------
+Indices tabla customers: 
+customer_id
+------------
+Indices tabla orders: 
+order_id
+------------
+Indices tabla order_payments: 
+order_id, payment_sequential
+------------
+Indices tabla order_items: 
+order_id, order_item_id
+------------
+Indices tabla products: 
+product_id
+------------

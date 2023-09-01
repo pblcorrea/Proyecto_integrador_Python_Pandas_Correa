@@ -1,0 +1,44 @@
+Tabla: customers
+Columna: customer_id Tipo: TEXT  PK
+Columna: customer_unique_id Tipo: TEXT
+Columna: customer_zip_code_prefix Tipo: INTEGER
+Columna: customer_city Tipo: TEXT
+Columna: customer_state Tipo: TEXT
+------------
+Tabla: orders
+Columna: order_id Tipo: TEXT  PK
+Columna: customer_id Tipo: TEXT
+Columna: order_status Tipo: TEXT
+Columna: order_purchase_timestamp Tipo: TEXT
+Columna: order_approved_at Tipo: TEXT
+Columna: order_delivered_carrier_date Tipo: TEXT
+Columna: order_delivered_customer_date Tipo: TEXT
+Columna: order_estimated_delivery_date Tipo: TEXT
+------------
+Tabla: order_payments
+Columna: order_id Tipo: TEXT  PK
+Columna: payment_sequential Tipo: INTEGER  PK
+Columna: payment_type Tipo: TEXT
+Columna: payment_installments Tipo: INTEGER
+Columna: payment_value Tipo: REAL
+------------
+Tabla: order_items
+Columna: order_id Tipo: TEXT  PK
+Columna: order_item_id Tipo: INTEGER  PK
+Columna: product_id Tipo: TEXT
+Columna: seller_id Tipo: TEXT
+Columna: shipping_limit_date Tipo: TEXT
+Columna: price Tipo: REAL
+Columna: freight_value Tipo: REAL
+------------
+Tabla: products
+Columna: product_id Tipo: TEXT  PK
+Columna: product_category_name Tipo: TEXT
+Columna: product_name_lenght Tipo: REAL
+Columna: product_description_lenght Tipo: REAL
+Columna: product_photos_qty Tipo: REAL
+Columna: product_weight_g Tipo: REAL
+Columna: product_length_cm Tipo: REAL
+Columna: product_height_cm Tipo: REAL
+Columna: product_width_cm Tipo: REAL
+------------
